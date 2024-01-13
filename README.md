@@ -13,4 +13,4 @@ For the future, Copilotic could acquire functionalities in this direction.
 - Analyze user feedback to enhance the app's capabilities over time.
 
 
-![Screenshot 2024-01-13 191234](https://github.com/builtbybel/Copilotic/assets/57478606/31b0bcaf-55e7-4b0b-939c-4614a1968f97)
+![Screenshot 2024-01-13 191234](https://github.com/builtbybel/Copilotic/assets/57478606/e1c9df16-8066-42d4-9d6f-3c227adb0f68)
