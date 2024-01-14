@@ -1,4 +1,4 @@
 *.js linguist-detectable=true
 *.html linguist-detectable=true
 *.xml linguist-detectable=true
- *.html linguist-language=JavaScript
+*.json linguist-detectable=true
