@@ -15,6 +15,7 @@ For the future, Copilotic could acquire functionalities in this direction.
 - Allow users to customize system settings 
 - Educate users about best practices for maintaining privacy and security.
 - Analyze user feedback to enhance the app's capabilities over time.
+- Btw., The app will run on Windows 10, too, about 98%.
 
 
 ![Screenshot 2024-01-14 230921](https://github.com/builtbybel/Comachina/assets/57478606/615471d5-b77b-4aee-8847-04c4bcbaeb38)
