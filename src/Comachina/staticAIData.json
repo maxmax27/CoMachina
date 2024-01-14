@@ -1,0 +1,40 @@
+[
+    {
+        "question": "What else can I do for you?",
+        "response": "Hi!",
+        "action": "none"
+    },
+    {
+        "question": "Which Microsoft apps are (soon) AI boosted?",
+        "response": "Skynet, Um! Microsoft AI is coming to:",
+        "action": "showAISayings"
+    },
+    {
+        "question": "I need an advanced debloating app",
+        "response": "We recommend BloatynosyApp for this task. It will be downloaded to your Desktop.",
+        "action": "downloadBloatynosyApp",
+        "downloadUrl": "https://github.com/builtbybel/Bloatynosy/releases/download/1.5.0/BloatynosyApp.zip",
+        "downloadPath": "$env:USERPROFILE\\Desktop\\BloatynosyApp.zip"
+    },
+    {
+        "question": "I need a Restore point created",
+        "response": "Now you are on the safe side. Restore point has been created.",
+        "action": "createRestorePoint",
+        "powershellCommand": "$desc = 'MSBob Restore'; Checkpoint-Computer -Description \"$desc\" -RestorePointType \"Modify_Settings\""
+    },
+    {
+        "question": "I want to reset my system",
+        "response": "Resetting your PC lets you perform a clean reinstallation and update of Windows while keeping your personal data and most Windows settings intact.",
+        "action": "runSystemReset"
+    },
+    {
+        "question": "I want to clean up my storage",
+        "response": "Running cleanmgr.exe",
+        "action": "runCleanMgr"
+    },
+    {
+        "question": "What is my Windows version?",
+        "response": "You are on Build: [buildNumber]",
+        "action": "showWindowsVersion"
+    }
+] 
