@@ -17,5 +17,19 @@ For the future, Copilotic could acquire functionalities in this direction.
 - Analyze user feedback to enhance the app's capabilities over time.
 
 
-
 ![Screenshot 2024-01-14 230921](https://github.com/builtbybel/Comachina/assets/57478606/615471d5-b77b-4aee-8847-04c4bcbaeb38)
+
+
+#### Support statement
+WebView2 apps can run on the following versions of Windows:
+
+- Windows 11
+- Windows 10
+- Windows 10 IoT Enterprise LTSC x32 2019
+- Windows 10 IoT Enterprise LTSC x64 2019
+- Windows 10 IoT Enterprise 21h1 x64
+- Windows Server 2022
+- Windows Server 2019
+- Windows Server 2016
+
+https://learn.microsoft.com/en-US/microsoft-edge/webview2/
