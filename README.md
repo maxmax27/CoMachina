@@ -8,7 +8,13 @@ It's a static client currently without AI integration, but it not only talks lik
 
 The app is supposed to do what the Windows Copilot was initially meant to do (hopefully it'll be able to do that someday) – navigate through options, open settings, and make system handling easier. Over time, the app will encompass many functions and possibly absorb some features or entire apps from me. Microsoft is implementing its AI plans more aggressively. Even our beloved Notepad might be affected. Curious to see where Microsoft heads, and I'll be throwing down with Comachina accordingly. Check out the first sneak peek and drop some suggestions.
 
+![Screenshot 2024-01-15 174244](https://github.com/builtbybel/Comachina/assets/57478606/e35d5d98-249a-46d0-b484-89d2bedb0a91)
+
+
+
+#### Agenda
 For the future, Copilotic could acquire functionalities in this direction.
+- Integrate Microsoft Copilot 
 - Enable users to control various aspects of their Windows 11 system 
 - Provide quick access to important settings
 - Implement features to assist users 
@@ -16,9 +22,6 @@ For the future, Copilotic could acquire functionalities in this direction.
 - Educate users about best practices for maintaining privacy and security.
 - Analyze user feedback to enhance the app's capabilities over time.
 - Btw., The app will run on Windows 10, too, about 98%.
-
-
-![Screenshot 2024-01-14 230921](https://github.com/builtbybel/Comachina/assets/57478606/615471d5-b77b-4aee-8847-04c4bcbaeb38)
 
 
 #### Support statement
