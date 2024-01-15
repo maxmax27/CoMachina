@@ -251,21 +251,24 @@ body {
 /* UI: LogContainer */
 #logContainer {
     position: fixed;
-    bottom: 0; /* Adjust this value based on your design */
+    bottom: 0; 
     right: 0;
     background: linear-gradient(45deg, #ffdd70, #ffc25e); /* Gradient background with yellow tones */
+	border: 2px solid #ddd;  /* Light border color */
     color: #333; /* Dark text color for better contrast */
     padding: 20px;
-    border: 2px solid #ddd; /* Light border color */
     border-radius: 10px; /* Slightly rounded corners */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
     text-align: left;
     animation: pulse-border 2s infinite;
-    z-index: 1000; /* Set a high z-index to ensure it's in the foreground */
+    z-index: 1000; /* Setting a high z-index to ensure it's in foreground */
     max-height: 500px;
     overflow-y: auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use a more modern font */
-   font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 13px;
+	/* Add transparency */
+   /* border: 2px solid rgba(221, 221, 221, 0.5); /* Light border color with transparency */
+   /* background: linear-gradient(45deg, rgba(255, 221, 112, 0.8), rgba(255, 194, 94, 0.8)); /* Gradient background with yellow tones and transparency */
 }
 
 #logContainerClose {
@@ -274,7 +277,7 @@ body {
     right: 5px;
     cursor: pointer;
     font-size: 16px;
-    color: #000; /* Black text color */
+    color: #000;
 }
 
 /* Adding a pulsing border animation for #logContainer */
