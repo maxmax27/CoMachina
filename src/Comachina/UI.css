@@ -4,31 +4,57 @@ body {
     color: #333;
     padding: 20px;
     text-align: left;
-    margin: 150px 0 60px; /* top 10px, right 0, bottom 60px, left 0 */
-    zoom: 0.9; /* zoom level */
+    margin: 240px 0 60px; /* top 240px, right 0, bottom 60px, left 0 */
+    zoom: 0.9; /* Webview2 zoom level */
 }
 
 /* Refresh button */
-#refreshButton {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  width: 40px;
-  height: 40px;
-  background-color: #ffffff;
-  border: none;
-  border-radius: 50%;
-  padding: 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  font-size: 18px;
-  color: #333333;
-}
+#refreshButton, #copilotButton {
+    position: fixed;
+    height: 40px;
+    background-color: #ffffff;
+    border: none;
+    padding: 0 15px; /* Add padding to give buttons some space */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 14px; 
+    color: #333333;
+  }
 
+  #refreshButton {
+    top: 10px;
+    right: 100px;
+	position: fixed;
+	  width: 40px;
+	  height: 40px;
+	  background-color: #ffffff;
+	  border: none;
+	  border-radius: 50%;
+	  padding: 0;
+	  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	  cursor: pointer;
+	  font-size: 18px;
+	  color: #333333;
+  }
 
+  #copilotButton {
+    top: 10px;
+    right: 10px; 
+    width: auto; /* Set width to auto to allow button to take full width */
+    background-color: #0078D4; /* Windows 11 blue color style */
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #copilotButton:hover {
+    background-color: #005A9E; /* Darker blue on hover */
+  }
 .emoji-container {
     position: absolute ;
-    top: 10px;
+    top: 50px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -42,7 +68,14 @@ body {
     color: #333;
     font-size: 36px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-     margin: 10px 0 120px; /* top 10px, right 0, bottom 60px, left 0 */
+    margin: 10px 0; /* Adjusted margin for h1 */
+}
+
+.emoji-container h2 {
+    color: #000;
+    font-size: 14px;
+    margin-top: 10px; /* Provide some space between h1 and h2 */
+    font-weight: normal; /* Set font weight to normal */
 }
 
 .emoji-container .emoji {
@@ -50,11 +83,7 @@ body {
     display: block;
     animation: pulse 1.5s infinite;
     cursor: pointer;
-	margin-top: 50px; /* Add margin-top to increase space before my emoji */
-}
-
-.emoji-container .emoji:hover {
-    color: #333;
+    margin-top: 20px; /* Adjusted margin-top */
 }
 
 @keyframes pulse {

@@ -1,7 +1,13 @@
+// Refresh Button
 function refreshWebView() {
     console.log("Refreshing WebView...");
    window.chrome.webview.postMessage('refreshWebView2');
 }
+
+// Microsoft Bing/Copilot Button
+  function openCopilot() {
+      window.chrome.webview.postMessage('openCopilot');
+  }
 
 // Quick help in Dropdown with question/answers
 function dropdownChanged() {

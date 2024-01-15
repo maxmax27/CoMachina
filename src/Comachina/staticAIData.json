@@ -20,7 +20,7 @@
         "question": "I need a Restore point created",
         "response": "Now you are on the safe side. Restore point has been created.",
         "action": "createRestorePoint",
-        "powershellCommand": "$desc = 'MSBob Restore'; Checkpoint-Computer -Description \"$desc\" -RestorePointType \"Modify_Settings\""
+        "powershellCommand": "$desc = 'CoMachina Restore'; Checkpoint-Computer -Description \"$desc\" -RestorePointType \"Modify_Settings\""
     },
     {
         "question": "I want to reset my system",
