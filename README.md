@@ -1,8 +1,8 @@
-# Comachina or CoMachina (Preview)
+# CoMachina or Comachina (Preview)
 
 Somehow, my work is slowly becoming more like the Windows Copilot. 
 
-Introducing Comachina App: 
+**Introducing CoMachina App:** 
 A hybrid WebView2 app designed to simplify navigation through Windows 11/10. 
 It's a static client currently without AI integration, but it not only talks like the Windows Copilot but also takes action. You can access and adjust crucial areas of Windows and even make some of the most important settings with it. It's still an early preview version, but it's up and running. I'm not quite sure which direction to take it in yet, eagerly awaiting what Microsoft has in store for AI and app integration. Feel free to check it out if you're interested.  
 
