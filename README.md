@@ -12,6 +12,7 @@ The app is supposed to do what the Windows Copilot was initially meant to do (ho
 
 #### Agenda
 For the future, Copilotic could acquire functionalities in this direction.
+- Integrate Microsoft Copilot 
 - Enable users to control various aspects of their Windows 11 system 
 - Provide quick access to important settings
 - Implement features to assist users 
