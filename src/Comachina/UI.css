@@ -19,6 +19,7 @@ body {
     cursor: pointer;
     font-size: 14px; 
     color: #333333;
+	z-index: 1000; /* Setting high z-index to ensure our buttons are in foreground */
   }
 
   #refreshButton {
@@ -67,7 +68,6 @@ body {
 .emoji-container h1 {
     color: #333;
     font-size: 36px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 10px 0; /* Adjusted margin for h1 */
 }
 
@@ -251,25 +251,28 @@ body {
 /* UI: LogContainer */
 #logContainer {
     position: fixed;
-    bottom: 0; 
-    right: 0;
-    background: linear-gradient(45deg, #ffdd70, #ffc25e); /* Gradient background with yellow tones */
-	border: 2px solid #ddd;  /* Light border color */
-    color: #333; /* Dark text color for better contrast */
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #E1BEE7, #FFF59D); /* Gradient background with light purple and yellow */
+	
+	
+    border: 2px solid #CE93D8; /* Light border color */
+    color: #4A148C; /* Dark text color for better contrast */
     padding: 20px;
     border-radius: 10px; /* Slightly rounded corners */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
     text-align: left;
     animation: pulse-border 2s infinite;
     z-index: 1000; /* Setting a high z-index to ensure it's in foreground */
     max-height: 500px;
     overflow-y: auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 13px;
-	/* Add transparency */
-   /* border: 2px solid rgba(221, 221, 221, 0.5); /* Light border color with transparency */
-   /* background: linear-gradient(45deg, rgba(255, 221, 112, 0.8), rgba(255, 194, 94, 0.8)); /* Gradient background with yellow tones and transparency */
+    /* Add glassy effect */
+    backdrop-filter: blur(10px) brightness(120%); /* Apply a subtle blur effect and brightness adjustment for a glassy effect */
 }
+
+
 
 #logContainerClose {
     position: absolute;

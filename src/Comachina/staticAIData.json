@@ -36,5 +36,15 @@
         "question": "What is my Windows version?",
         "response": "You are on Build: [buildNumber]",
         "action": "showWindowsVersion"
-    }
+    },
+	{
+		"question": "Display my system's available disk space",
+		"response": "Available space on your system partition:",
+		"action": "showDiskSpace"
+		},
+	{
+		"question": "I need a screenshot of my desktop",
+		"response": "Desktop screenshot captured and saved.",
+		"action": "takeDesktopScreenshot"
+	}
 ] 
