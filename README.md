@@ -8,7 +8,8 @@ It's a static client currently without AI integration, but it not only talks lik
 
 The app is supposed to do what the Microsoft Copilot was initially meant to do (hopefully it'll be able to do that someday) – navigate through options, open settings, and make system handling easier. Over time, the app will encompass many functions and possibly absorb some features or entire apps from me. Microsoft is implementing its AI plans more aggressively. Even our beloved Notepad might be affected. Curious to see where Microsoft heads, and I'll be throwing down with CoMachina accordingly. Check out the first sneak peek and drop some suggestions.
 
-![Screenshot 2024-01-16 161812](https://github.com/builtbybel/CoMachina/assets/57478606/34eff657-b128-4523-a7c9-e12237997d36)
+![Screenshot 2024-01-17 172011](https://github.com/builtbybel/CoMachina/assets/57478606/183c1b7b-f5f9-41b4-ac76-e5dfee4f7383)
+
 
 
 #### Agenda
