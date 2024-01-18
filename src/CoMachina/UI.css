@@ -1,0 +1,378 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   /* background: linear-gradient(to right bottom, #f0f0f0, #d1d1d1); Default background */
+    background: linear-gradient(to right bottom, #f5f5f5, #c9c9e0); /* Light grey to light purple gradient */
+    color: #333;
+    padding: 20px;
+    text-align: left;
+    margin: 240px 0 60px; /* top 240px, right 0, bottom 60px, left 0 */
+    zoom: 0.9; /* WebView2 zoom level */
+}
+
+/* Refresh button */
+#refreshButton, #copilotButton {
+    position: fixed;
+    height: 40px;
+    background-color: #ffffff;
+    border: none;
+    padding: 0 15px; /* Add padding to give buttons some space */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 14px; 
+    color: #333333;
+	z-index: 1000; /* Setting high z-index to ensure our buttons are in foreground */
+  }
+
+  #refreshButton {
+    top: 10px;
+    right: 100px;
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	background-color: #ffffff;
+	border: none;
+	border-radius: 50%;
+	padding: 0;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	font-size: 18px;
+	color: #333333;
+  }
+
+  #copilotButton {
+    top: 10px;
+    right: 10px; 
+    width: auto; /* Set width to auto to allow button to take full width */
+    background-color: #0078D4; /* Windows 11 blue color style */
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #copilotButton:hover {
+    background-color: #005A9E; /* Darker blue on hover */
+  }
+  
+.emoji-container {
+    position: absolute ;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.emoji-container a {
+    text-decoration: none;
+}
+
+.emoji-container h1 {
+    color: #000;
+    font-size: 27px;
+    margin: 10px 0; 
+	font-weight: bold;
+}
+
+.emoji-container h2 {
+    color: #5c5c5c;
+    font-size: 13px;
+    margin-top: 10px; /* Provide some space between h1 and h2 */
+    font-weight: normal;
+}
+
+.emoji-container .emoji {
+    font-size: 40px;
+    display: block;
+    animation: pulse 1.5s infinite;
+    cursor: pointer;
+    margin-top: 20px; /* Adjusted margin-top */
+	animation: heartbeat 5s infinite; /*@keyframes heartbeat */
+}
+
+@keyframes heartbeat {
+    0%, 20% {
+        transform: scale(1);
+        opacity: 0.4;
+    }
+    25%, 50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    55%, 70% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    75%, 100% {
+        transform: scale(1.2);
+        opacity: 0.2;
+    }
+}
+
+#homeHeader,
+#crapwareHeader,
+#diagnosticHeader,
+#appsHeader,
+#buttonsContainer
+{
+    background: rgba(184, 189, 255, 0.9); /* Light Purple */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    z-index: 998; /* Lower z-index than logContainer */
+}
+#systemHeader {
+    background: linear-gradient(to right, #cde7c9, #8ee4af); /* Modern light green gradient */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    z-index: 998; /* Lower z-index than logContainer */
+}
+
+#checkboxContainer {
+    background: linear-gradient(to right, #f6e8df, #f9d4bf); /* Light gradient orange */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    z-index: 998; /* Lower z-index than logContainer */
+}
+
+
+.header-caption {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+
+/* UI: Glassy-Box effects*/
+.glassy-box {
+    background: linear-gradient(45deg, #ffcc80, #ff6699); /* Gradient background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 0px 0;
+}
+
+.glassy-box button {
+    background: linear-gradient(45deg, #7048e8, #ff4dce); /* Gradient button background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px; /* Slightly rounded corners */
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.glassy-box button:hover {
+    background: linear-gradient(45deg, #5e3db6, #ff008e); /* Darker gradient on hover */
+}
+
+.glassy-box button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Transparent overlay */
+    pointer-events: none;
+}
+
+
+/* UI: Header styling for Toggle Switches */
+.checkbox-label {
+    margin-left: 10px;
+    display: inline-block;
+    color: #333; 
+    font-size: 14px; 
+    font-weight: bold;
+}
+
+/* UI: Toggle Switches */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    margin-right: 20px;
+}
+
+.toggle-switch input {
+    display: none;
+}
+
+.toggle-switch-label {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 24px;
+    background-color: #d6d6d6; /* Light gray background */
+    border-radius: 12px;
+    transition: background-color 0.3s;
+}
+
+.toggle-switch-label:before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff; /* White circle */
+    border-radius: 50%;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.toggle-switch input:checked + .toggle-switch-label {
+    background-color: #4a90e2; /* Dodger Blue when checked */
+}
+
+.toggle-switch input:checked + .toggle-switch-label:before {
+    transform: translateX(26px);
+    background-color: #fff; /* White circle when checked */
+}
+
+
+/* Quick helper dropdown */
+#dropdown {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #a460e6; /* Light Purple color */
+    border-radius: 5px;
+    background-color: #f2ebff; /* Light Purple background */
+    color: #7048e8; /* Purple text color */
+    cursor: pointer;
+    outline: none; /* Remove default focus border */
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+/* Style dropdown options */
+#dropdown option {
+    padding: 10px;
+}
+
+/* Hover effect */
+#dropdown:hover {
+    background-color: #a460e6; /* Light Purple color on hover */
+    color: #ffffff; /* White text color on hover */
+    border: 1px solid #a460e6; /* Light Purple border on hover */
+}
+
+/* Active (clicked) effect */
+#dropdown:active {
+    background-color: #8e3ec5; /* Darker Purple when clicked */
+    color: #ffffff; /* White text color when clicked */
+    border: 1px solid #8e3ec5; /* Darker Purple border when clicked */
+}
+
+/* UI: LogContainer */
+#logContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #E1BEE7, #FFF59D); /* Gradient background with light purple and yellow */
+    border: 2px solid #CE93D8; /* Light border color */
+    color: #4A148C; /* Dark text color for better contrast */
+    padding: 20px;
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+    text-align: left;
+    animation: pulse-border 2s infinite;
+    z-index: 1000; /* Setting a high z-index to ensure it's in foreground */
+    max-height: 500px;
+    overflow-y: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    /* Add glassy effect */
+    backdrop-filter: blur(10px) brightness(120%); /* Apply a subtle blur effect and brightness adjustment for a glassy effect */
+}
+
+#logContainerClose {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000;
+}
+
+/* Adding a pulsing border animation for #logContainer */
+@keyframes pulse-border {
+    0% {
+        border-color: #000;
+    }
+
+    50% {
+        border-color: #fff;
+    }
+
+    100% {
+        border-color: #000;
+    }
+}
+
+#logContainer:hover {
+    animation: pulse-border 2s infinite;
+}
+
+/* SECTION: Install missing apps */
+#appList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.app-item {
+    background: rgba(255, 255, 255, 0.9); /* White */
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s;
+}
+
+.app-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+}
+
+/* SECTION: Crapware styles */
+.appx-container {
+    padding: 1px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.appx-item {
+    background-color: #f5f5f5; /* Light background color */
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px;
+    margin-bottom: 12px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+    .appx-item:hover {
+        background-color: #e0e0e0; /* Darker background color on hover */
+    }
+
+.appx-details {
+    margin-bottom: 8px;
+}
+
+/* Ensure each appx-item is on a separate line */
+.appx-item {
+    width: 100%;
+}
