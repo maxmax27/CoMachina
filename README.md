@@ -1,5 +1,5 @@
 # CoMachina
-CoMachina strives to bring a touch of coolness by automating, transforming, and revolutionizing the way you navigate through Windows and tailor it to your needs.
+**CoMachina strives to bring a touch of coolness by automating, transforming, and revolutionizing the way you navigate through Windows and tailor it to your needs.**
 
 Somehow, my work is slowly becoming more like the Microsoft Copilot. 
 
