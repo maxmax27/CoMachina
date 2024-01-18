@@ -1,4 +1,4 @@
-# CoMachina or Comachina (Preview)
+# CoMachina
 
 Somehow, my work is slowly becoming more like the Microsoft Copilot. 
 
