@@ -1,20 +1,20 @@
 // Refresh Button
 function refreshWebView() {
     console.log("Refreshing WebView...");
-   window.chrome.webview.postMessage('refreshWebView2');
+    window.chrome.webview.postMessage('refreshWebView2');
 }
 
 // Microsoft Bing/Copilot Button
-  function openCopilot() {
-      window.chrome.webview.postMessage('openCopilot');
-  }
+function openCopilot() {
+    window.chrome.webview.postMessage('openCopilot');
+}
 
 // Quick help in Dropdown with question/answers
 function dropdownChanged() {
     var selectedIndex = document.getElementById('dropdown').selectedIndex;
     window.chrome.webview.postMessage("showAnswerForDropdown:" + selectedIndex.toString());
 }
-	
+
 // Handle scrolling to bottom
 function scrollToBottom() {
     var logContainer = document.getElementById('logContainer');
@@ -176,4 +176,3 @@ function removeCustomCrapware() {
     console.log("Removing custom crapware...");
     window.chrome.webview.postMessage('removeCustomCrapware');
 }
-

@@ -10,32 +10,32 @@
 
 <body>
 
-<!-- Add Refresh button -->
-<button id="refreshButton" onclick="refreshWebView()" title="Refresh">↻</button>
-<!-- Add Copilot button -->
-<button id="copilotButton" onclick="openCopilot()" title="Open Copilot">Copilot</button>
+    <!-- Add Refresh button -->
+    <button id="refreshButton" onclick="refreshWebView()" title="Refresh">↻</button>
+    <!-- Add Copilot button -->
+    <button id="copilotButton" onclick="openCopilot()" title="Open Copilot">Copilot</button>
 
-<div class="emoji-container">
-    <a href="https://github.com/builtbybel/Comachina" target="_blank">
-        <span class="emoji">&#129302</span>
-    </a>
-    <h1>CoMachina</h1>
-    <h2>your Local Companion
-	<p>
-	  <a href="https://github.com/builtbybel/CoMachina" target="_blank" title="Follow CoMachina on GitHub" style="color: #000;">
-		Follow development on <span style="color: magenta;">&#10084;</span> GitHub
-	  </a>
-	</p>
-   </h2>
-</div>
+    <div class="emoji-container">
+        <a href="https://github.com/builtbybel/Comachina" target="_blank">
+            <span class="emoji">&#9863;</span>
+        </a>
+        <h1>CoMachina</h1>
+        <h2>
+            your everyday local companion
+            <p>
+                <a href="https://github.com/builtbybel/CoMachina" target="_blank" title="Follow CoMachina on GitHub" style="color: #000;">
+                    Follow development on <span style="color: magenta;">&#10084;</span> GitHub
+                </a>
+            </p>
+        </h2>
+    </div>
 
-        <!-- Log Container and Close Button -->
-        <div id="logContainer" onscroll="handleLogContainerScroll()">
-            <!-- Log content -->
-		Hi, I'm Ava, your friendly companion from Redmond, WA. Let's navigate Windows together and make it uniquely yours.
-		As the movie "Ex Machina" reminds us, "Nothing is more human than the will to survive." Ready to create something amazing?
-        </div>
- 
+    <!-- Log Container and Close Button -->
+    <div id="logContainer" onscroll="handleLogContainerScroll()">
+        <!-- Log content -->
+        Hi, I'm Ava, your friendly companion from Redmond, WA. Let's navigate Windows together and make it uniquely yours.
+        As the movie "Ex Machina" reminds us, "Nothing is more human than the will to survive." Ready to create something amazing?
+    </div>
 
     <!-- HOME -->
     <div class="glassy-box" id="homeHeader">
@@ -45,24 +45,24 @@
         <button id="btnOpenBackupSettings" onclick="openBackupSettings()">Restore backups</button>
         <button id="btnOpenPinSettings" onclick="openPinSettings()">Create a PIN</button>
         <button id="btnOpenUpdatePinSettings" onclick="openUpdateSettings()">Check for updates</button>
-		<!-- Othe options in dropdown -->
-		<select id="dropdown" onchange="dropdownChanged()">
-	    <!-- The options will be dynamically loaded from C# -->
-		</select>
+        <!-- Othe options in dropdown -->
+        <select id="dropdown" onchange="dropdownChanged()">
+            <!-- The options will be dynamically loaded from C# -->
+        </select>
     </div>
 
-       <!-- PERSONALIZATION -->
-        <div class="glassy-box" id="personalizationHeader">
-            <div id="avaHeader" class="header-caption">Make the everyday easier</div>
-            <p>Because a Windows desktop should reflect your personality.</p>
-            <button id="btnOpenWallpaperSettings" onclick="openWallpaperSettings()">Choose custom Wallpaper</button>
-            <button id="btnOpenThemeSettings" onclick="openThemeSettings()">Toggle Dark/Light mode</button>
-        </div>
-     </div>
-	 
+    <!-- PERSONALIZATION -->
+    <div class="glassy-box" id="personalizationHeader">
+        <div id="avaHeader" class="header-caption">Make the everyday easier</div>
+        <p>Because a Windows desktop should reflect your personality.</p>
+        <button id="btnOpenWallpaperSettings" onclick="openWallpaperSettings()">Choose custom Wallpaper</button>
+        <button id="btnOpenThemeSettings" onclick="openThemeSettings()">Toggle Dark/Light mode</button>
+    </div>
+    </div>
+
     <!-- SYSTEM -->
     <div class="glassy-box" id="systemHeader">
-        <div id="avaHeader" class="header-caption">Meet Windows:</div>
+        <div id="avaHeader" class="header-caption">Meet Privacy Dashboard</div>
         <p>Choose how much information you want to share with Microsoft.</p>
         <div id="statusContainer">
             <button id="btnSearch" onclick="searchFeatures()">Check my Windows Setup</button>
@@ -196,21 +196,21 @@
             <button id="btnEnable" onclick="disableFeatures()">Deny selected</button>
             <button id="btnDisable" onclick="enableFeatures()">Allow selected</button>
         </div>
-  
+
         <!-- APPX UNINSTALLER -->
         <div class="glassy-box" id="crapwareHeader">
             <div id="avaHeader" class="header-caption">
                 Cleaning Up the Digital Playground (Crapware)
                 <span style="color: red; font-size: 11px; margin-left: 12px;">*This option is not supported by Microsoft</span>
             </div>
-        Microsoft inked deals with third-party suppliers for app icons on the new Windows 11 Start Menu. Just click on icons like Picsart Pro or WhatsApp to install them. Windows 11 also has Spotify, Instagram, and TikTok. If you want, you can check and remove these apps here.
-		 <h2>Installed App Packages<span id="installedPackagesCount"></span></h2>
+            Microsoft inked deals with third-party suppliers for app icons on the new Windows 11 Start Menu. Just click on icons like Picsart Pro or WhatsApp to install them. Windows 11 also has Spotify, Instagram, and TikTok. If you want, you can check and remove these apps here.
+            <h2>Installed App Packages<span id="installedPackagesCount"></span></h2>
 
-			<div id="appPackagesContainer">
-		   <!-- Toggle switches for installed app packages will be dynamically loaded here -->
-			</div>
-			</p>
-			<button onclick="removeSelectedPackages()">Remove Selected</button>
+            <div id="appPackagesContainer">
+                <!-- Toggle switches for installed app packages will be dynamically loaded here -->
+            </div>
+            </p>
+            <button onclick="removeSelectedPackages()">Remove Selected</button>
             <button id="btnsearchCustomCrapware" onclick="searchCustomCrapware()">Search crapware database (optional)</button>
             <button id="btnremoveCustomCrapware" onclick="removeCustomCrapware()">Remove crapware in optional database</button>
         </div>
