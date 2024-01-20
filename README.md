@@ -1,6 +1,9 @@
 # CoMachina
 **CoMachina strives to bring a touch of coolness by automating, transforming, and revolutionizing the way you navigate through Windows and tailor it to your needs.**
 
+
+<img src="https://github.com/builtbybel/CoMachina/assets/57478606/554613a1-1828-4ea9-be45-81029e9bf56f" width="250" height="250">
+
 Somehow, my work is slowly becoming more like the Microsoft Copilot. 
 
 **Introducing CoMachina:** 
